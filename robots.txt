@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spokenenglishpratices.netlify.app/sitemap.xml
