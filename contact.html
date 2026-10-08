@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – NM Spoken English Class</title>
+    <meta name="description" content="Contact NM Spoken English Class for questions, feedback or suggestions." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="site.css" rel="stylesheet" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-1684242835147633">
+    <meta name="google-site-verification" content="H7gB5AGytu3hASQ3pwpH16zcMU7SUrdKjeU1gX_VIaM" />
+    <script src="https://quge5.com/88/tag.min.js" data-zone="255781" async data-cfasync="false"></script>
+</head>
+
+<body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="app-wrapper">
+        <header>
+            <div class="container">
+                <a class="logo-badge" href="index.html">
+                    <div class="icon-ring"><i class="fa-solid fa-language"></i></div>
+                    <span>NM Spoken English Class</span>
+                </a>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="page-hero">
+            <h1>Contact <span>Us</span></h1>
+            <p>We would love to hear from you.</p>
+        </div>
+
+        <main class="container" style="max-width:900px">
+            <div class="content-card">
+                <h2>Get In Touch</h2>
+                <p>Any question, feedback or suggestion? Engaluku message anuppunga — we will reply as soon as possible.</p>
+                <div class="contact-info" style="margin-top:18px">
+                    <div><i class="fa-solid fa-envelope"></i><span>youremail@example.com</span></div>
+                    <div><i class="fa-solid fa-phone"></i><span>+91 00000 00000</span></div>
+                    <div><i class="fa-solid fa-location-dot"></i><span>Papanasam, Tamil Nadu, India</span></div>
+                </div>
+                <h2>Send A Message</h2>
+                <form id="contactForm">
+                    <div class="form-row"><label for="cName">Your Name</label><input id="cName" type="text" required /></div>
+                    <div class="form-row"><label for="cEmail">Your Email</label><input id="cEmail" type="email" required /></div>
+                    <div class="form-row"><label for="cMsg">Message</label><textarea id="cMsg" rows="5" required></textarea></div>
+                    <button type="submit" class="btn-main"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</button>
+                </form>
+            </div>
+            <script>
+                // Opens the visitor's email app with the message filled in.
+                // Replace the address below with your real email.
+                document.getElementById('contactForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const to = 'youremail@example.com';
+                    const name = document.getElementById('cName').value;
+                    const email = document.getElementById('cEmail').value;
+                    const msg = document.getElementById('cMsg').value;
+                    const subject = encodeURIComponent('Message from ' + name);
+                    const body = encodeURIComponent(msg + '\n\nFrom: ' + name + ' (' + email + ')');
+                    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+                });
+            </script>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="links"><a href="about.html">About</a> <a href="services.html">Services</a> <a href="contact.html">Contact</a> <a href="privacy-policy.html">Privacy Policy</a> <a href="terms-and-conditions.html">Terms &amp; Conditions</a></div>
+                <p>© <span id="yearNow"></span> NM Spoken English Class — Practice spoken English, one sentence at a time.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById('yearNow').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
