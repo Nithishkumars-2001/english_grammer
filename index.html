@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700&display=swap"
         rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
      crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-1684242835147633">
@@ -870,6 +871,50 @@
         .site-footer a:hover {
             text-decoration: underline;
         }
+
+        /* ─── Site navigation ─── */
+        .site-nav {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            padding: 12px 0 0;
+            scrollbar-width: none;
+        }
+
+        .site-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .site-nav a {
+            flex: 0 0 auto;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.84rem;
+            font-weight: 500;
+            padding: 6px 16px;
+            border-radius: 50px;
+            transition: all 0.25s;
+            white-space: nowrap;
+        }
+
+        .site-nav a:hover {
+            color: #fff;
+            background: var(--glass);
+        }
+
+        .site-nav a.active {
+            color: #fff;
+            background: linear-gradient(90deg, var(--indigo), var(--violet));
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+        }
+
+        .site-footer .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .site-footer .footer-links a {
+            margin: 0 8px;
+        }
     </style>
 
 </head>
@@ -908,6 +953,14 @@
                                 id="timerDisplay">01:00</span></div>
                     </div>
                 </div>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                </nav>
             </div>
         </header>
 
@@ -915,9 +968,9 @@
         <div class="container" style="max-width:860px">
             <div class="ad-slot ad-slot-top">
                 <div class="ad-label">Advertisement</div>
-                <!-- ads link -->
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
-     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
         </div>
 
@@ -966,8 +1019,6 @@
                         <div class="ad-slot ad-slot-incontent">
                             <div class="ad-label">Advertisement</div>
                             <!-- Ads link -->
-                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
-     crossorigin="anonymous"></script>
                         </div>
 
                         <!-- Navigation: real links so each click is a genuine full page reload -->
@@ -1042,11 +1093,12 @@
             <div class="ad-slot ad-slot-footer">
                 <div class="ad-label">Advertisement</div>
                 <!-- ads  link -->
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1684242835147633"
-     crossorigin="anonymous"></script>
             </div>
 
             <footer class="site-footer">
+                <div class="footer-links"><a href="about.html">About</a> <a href="services.html">Services</a> <a
+                        href="contact.html">Contact</a> <a href="privacy-policy.html">Privacy Policy</a> <a
+                        href="terms-and-conditions.html">Terms &amp; Conditions</a></div>
                 <p> © <span id="yearNow"></span> NM Spoken English Class — Practice spoken English, one sentence at a
                     time.</p>
             </footer>
